@@ -1,0 +1,53 @@
+// Place all the styles related to the Pantries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$bg-color: #d8d8d8;
+$dark: #1F2030;
+$red: #D90429;
+$white: #FFFFFF;
+$text: #494949;
+
+.app-logo img {
+  height: 100px;
+  width: 100px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.app {
+  display: inline-block;
+}
+
+.section {
+  margin-top: 4%;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#ingredients {
+  border-style: solid;
+  border-radius: 25px;
+  background-color: antiquewhite;
+  border-color: antiquewhite;
+  padding: 25px;
+}
+
+#pantry {
+  border-style: solid;
+  border-radius: 25px;
+  background-color: antiquewhite;
+  border-color: antiquewhite;
+  padding: 25px;
+  margin-left: 2%;
+}
+
+.choose {
+  color: $dark;
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  font-weight: 600;
+  margin: 2% 0;
+}
+
+#description {
+  margin: 0% 30% 0% 27%;
+}

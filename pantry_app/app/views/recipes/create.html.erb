@@ -1,0 +1,12 @@
+<h1>Recipes#create</h1>
+<p>Find me in app/views/recipes/create.html.erb</p>
+
+<%= params %>
+<% params.each do |item| %>
+<%= item %>
+<% end %>
+
+
+<% @recipes.each do |item| %>
+<%= item.title %>
+<% end %>

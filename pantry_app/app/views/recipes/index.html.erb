@@ -1,0 +1,11 @@
+<h1 id="matches" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">Matches:</h1>
+
+
+<% @ingredients.each do |item| %>
+<br>
+<br>
+<img style="width: 50%; height: 50%; border-radius: 25px; margin-top: 1%; margin-left: 23%;" src="/assets/<%= item.recipe.img_name %>.jpg" alt="">
+<p style="text-align: center;"><%= item.recipe.title %></p>
+<p id="description"><%= item.recipe.instructions %></p>
+<% end %>
+

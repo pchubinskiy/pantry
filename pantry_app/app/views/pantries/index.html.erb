@@ -1,0 +1,82 @@
+<div class="app-logo">
+  <%= image_tag 'chef.png' %>
+  <h1 class="app">Pantry.io</h1>
+</div>
+
+<div class="row">
+  <div id="ingredients" class="section col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <select id="dropdown" width="300px" class="categories" name="Categories">
+      <option value="choose">Choose a Food Type</option>
+        <% @categories.each do |category| %>
+          <option class="ingredient" value="<%= category.name.downcase %>"><%= category.name %></option>
+        <% end %>
+    </select>
+
+    <p class="choose">Ingredients:</p>
+
+  <% i = 0 %>
+  <% @ingredients.each do |ingredient| %>
+  <input id="cbox<%=i+=1%>" class="cbox <%= Category.category_name(ingredient.category_id) %>" type="checkbox" value="<%= ingredient.id %>">
+  <label for="cbox<%=i%>" id="label<%=i%>" class="cbox <%= Category.category_name(ingredient.category_id) %>"><%= ingredient.name %></label>
+  <% end %>
+
+    <button id="ingredients_to_cart" type="submit" class="btn btn-primary">Select</button>
+  </div>
+
+  <div id="pantry" class="section col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <p class="choose">Pantry: </p>
+
+      <div id="cart_item1"></div>
+      <div id="cart_item2"></div>
+      <div id="cart_item3"></div>
+      <div id="cart_item4"></div>
+      <div id="cart_item5"></div>
+      <div id="cart_item6"></div>
+      <div id="cart_item7"></div>
+      <div id="cart_item8"></div>
+      <div id="cart_item9"></div>
+      <div id="cart_item10"></div>
+      <div id="cart_item11"></div>
+      <div id="cart_item12"></div>
+      <div id="cart_item13"></div>
+      <div id="cart_item14"></div>
+      <div id="cart_item15"></div>
+      <div id="cart_item16"></div>
+      <div id="cart_item17"></div>
+      <div id="cart_item18"></div>
+      <div id="cart_item19"></div>
+      <div id="cart_item20"></div>
+      <div id="cart_item21"></div>
+      <div id="cart_item22"></div>
+      <div id="cart_item23"></div>
+      <div id="cart_item24"></div>
+
+    <%= form_for :pantry, method: "get", url: recipes_path do |f| %>
+      <%= f.text_field :item1, hidden: true %>
+      <%= f.text_field :item2, hidden: true %>
+      <%= f.text_field :item3, hidden: true %>
+      <%= f.text_field :item4, hidden: true %>
+      <%= f.text_field :item5, hidden: true %>
+      <%= f.text_field :item6, hidden: true %>
+      <%= f.text_field :item7, hidden: true %>
+      <%= f.text_field :item8, hidden: true %>
+      <%= f.text_field :item9, hidden: true %>
+      <%= f.text_field :item10, hidden: true %>
+      <%= f.text_field :item11, hidden: true %>
+      <%= f.text_field :item12, hidden: true %>
+      <%= f.text_field :item13, hidden: true %>
+      <%= f.text_field :item14, hidden: true %>
+      <%= f.text_field :item15, hidden: true %>
+      <%= f.text_field :item16, hidden: true %>
+      <%= f.text_field :item17, hidden: true %>
+      <%= f.text_field :item18, hidden: true %>
+      <%= f.text_field :item19, hidden: true %>
+      <%= f.text_field :item20, hidden: true %>
+      <%= f.text_field :item21, hidden: true %>
+      <%= f.text_field :item22, hidden: true %>
+      <%= f.text_field :item23, hidden: true %>
+      <%= f.text_field :item24, hidden: true %>
+      <%= f.submit value: "Get Recipes", :class => 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

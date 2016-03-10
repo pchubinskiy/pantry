@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Roboto|Maven+Pro);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+
+$bg-color: #d8d8d8; //not using
+$dark: #1F2030;
+$red: #D90429;
+$white: #FFFFFF;
+$text: #494949;
+
+
+body {
+  background-color: white;
+  font-size: 16px;
+}
+
+.chef img {
+  height: 150px;
+  width: 150px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.login_page, .register, .edit, .password {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.welcome, .sign-up, .change, .app {
+  color: $red;
+  font-family: 'Righteous', cursive;
+}
+
+.logo {
+  color: $white !important;
+  font-size: 105px !important;
+}
+
+.login {
+  font-weight: 900;
+}
+
+.field {
+  margin-bottom: 1%;
+  color: $dark;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.links {
+  margin: 1% 0;
+}
+
+.links:hover {
+  color: $text;
+}
+
+#ingredients_to_cart {
+  display: block;
+}
+

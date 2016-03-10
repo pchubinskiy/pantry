@@ -1,0 +1,26 @@
+<h1>Forms#new</h1>
+<p>Find me in app/views/forms/new.html.erb</p>
+
+<select>
+
+<% @categories.each do |category| %>
+	<option value="<%= category.id %>"><%= category.name %></option>
+<% end %>
+
+</select>
+
+
+<!-- form from joe/andrew -->
+
+<form action="/recipes">
+<% @categories.each do |category| %>
+  <h3><%= category.name %></h3>
+  <% category.ingredients.each do |ingredient| %>
+    <input type="checkbox" name="ingredients[]" value="<%= ingredient.id %>"><%= ingredient.name %>
+  <% end %>
+
+<% end %>
+
+<input type="submit" value="SUBMIT">
+</form>
+
