@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 # Heroku recommendation: add Ruby version (https://devcenter.heroku.com/articles/ruby-version)
 ruby '2.2.3'
 
+# Used in Procfile
+gem 'thin'
 # Heroku recommendation: add this gem to enable all platform features
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
