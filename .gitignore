@@ -11,4 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+#ignore .rdoc README until it is actually updated
 README.rdoc
