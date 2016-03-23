@@ -4,7 +4,7 @@
 <% @ingredients.each do |item| %>
 <br>
 <br>
-<img style="width: 50%; height: 50%; border-radius: 25px; margin-top: 1%; margin-left: 23%;" src="/public/images/<%= item.recipe.img_name %>.jpg" alt="">
+<img style="width: 50%; height: 50%; border-radius: 25px; margin-top: 1%; margin-left: 23%;" src="/public/<%= item.recipe.img_name %>.jpg" alt="">
 <p style="text-align: center;"><%= item.recipe.title %></p>
 <p id="description"><%= item.recipe.instructions %></p>
 <% end %>
