@@ -6,9 +6,6 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-# # to serve images from assets/images
-# config.serve_static_assets = true
-
 module Reciperekt
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -25,5 +22,8 @@ module Reciperekt
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # to serve images from assets/images
+    config.serve_static_assets = true
   end
 end
