@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'dashboards#index'
 
+  get 'assets/images'
+
   get 'dashboards/index'
 
   get 'recipes/index'
