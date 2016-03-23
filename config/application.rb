@@ -6,8 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-# to serve images from assets/images
-config.serve_static_assets = true
+# # to serve images from assets/images
+# config.serve_static_assets = true
 
 module Reciperekt
   class Application < Rails::Application
