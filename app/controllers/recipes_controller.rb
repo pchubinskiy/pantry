@@ -12,11 +12,6 @@ class RecipesController < ApplicationController
   end
 
   def create
-    #render plain: params[:pantry].inspect
-
-    # @ingr_rec = IngredientsRecipe.where(ingredient_id: params[:pantry])
-    # @recipes = Recipe.all
-
   end
 
   def edit

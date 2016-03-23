@@ -1,3 +1,12 @@
+**As a user i should be able to**
+
+  choose ingredients and have checks go away when changing categories
+  submit ingredients to cart
+  not repeat ingredients in cart
+  submit a max of 3 ingredients to cart (check max = 3)
+  delete ingredients from cart
+  submit cart as post request
+
 == README
 
 This README would normally document whatever steps are necessary to get the
