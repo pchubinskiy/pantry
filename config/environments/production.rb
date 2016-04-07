@@ -6,6 +6,8 @@ Rails.application.configure do
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
   config.assets.compile = true
 
+  config.assets.initialize_on_precompile = false
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
